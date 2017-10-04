@@ -1037,6 +1037,10 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
+codem-isoboxer@0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/codem-isoboxer/-/codem-isoboxer-0.2.7.tgz#a4291993d68bf7b344cff53dc2c6279503dc5f42"
+
 color-convert@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
@@ -1254,6 +1258,13 @@ dashdash@^1.12.0:
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
   dependencies:
     assert-plus "^1.0.0"
+
+dashjs@~2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/dashjs/-/dashjs-2.4.1.tgz#e3f3a280a237e63c4438fe97837bcade8f11f3ee"
+  dependencies:
+    codem-isoboxer "0.2.7"
+    round10 "^1.0.3"
 
 dateformat@^2.0.0:
   version "2.2.0"
@@ -3649,6 +3660,10 @@ rimraf@~2.2.6:
 rndm@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rndm/-/rndm-1.2.0.tgz#f33fe9cfb52bbfd520aa18323bc65db110a1b76c"
+
+round10@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/round10/-/round10-1.0.3.tgz#86110f46a10874a1931da7fdd5e06d1857a8e4d0"
 
 run-async@^0.1.0:
   version "0.1.0"
