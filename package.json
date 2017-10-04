@@ -1,7 +1,6 @@
 {
-  "name": "react_vr_samples",
+  "name": "react-vr-samples",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node -e \"console.log('open browser at http://localhost:8081/src/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
     "bundle": "node tools/bundle.js",
