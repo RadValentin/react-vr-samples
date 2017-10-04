@@ -3,7 +3,7 @@ import {VRInstance} from 'react-vr-web';
 import {MouseRayCaster} from 'ovrui';
 import * as THREE from 'three';
 
-import ThreeDOFRayCaster from '../../inputs/3dof/ThreeDOFRayCaster';
+import ThreeDOFRayCaster from '../inputs/3dof/ThreeDOFRayCaster';
 
 function init(bundle, parent, options) {
   const scene = new THREE.Scene();
