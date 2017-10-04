@@ -92,7 +92,7 @@ function bundleDir(projectDir) {
 const isDirectory = source => fs.lstatSync(source).isDirectory();
 const getDirectories = source =>
   fs.readdirSync(source).map(name => path.join(source, name))
-                        .filter(isDirectory)
+    .filter(isDirectory).filter(name => name.indexOf('__assets__') === -1);
 
 async function bundleAll() {
   const projectDirs = getDirectories(path.join(process.cwd(), 'src'));

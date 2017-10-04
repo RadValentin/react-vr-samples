@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>React VR Samples</title>
+  <link rel="shortcut icon" href="./__assets__/favicon.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background: #eaebec;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    #server-message {
+      display: none;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        width: calc(100% - 2em);
+      }
+    }
+
+    .samples {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .sample {
+      position: relative;
+      height: 500px;
+      margin-bottom: 1em;
+      background: #fff;
+    }
+
+    @media (min-width: 769px) {
+      .sample {
+        width: calc(100% / 3 - 1em / 2);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sample {
+        width: 100%;
+      }
+    }
+
+    .sample a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      color: #393c45;
+    }
+
+    .sample img {
+      width: 100%;
+      height: calc(100% - 80px);
+      object-fit: cover;
+    }
+
+    .sample span {
+      display: inline-block;
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 27px 35px;
+      background: #fff;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>React VR Samples</h1>
+    <ul class="samples clearfix"></ul>
+    <h2>Additional Resources</h2>
+    <ul>
+      <li><a href="https://facebookincubator.github.io/react-vr/">React VR Documentation</a></li>
+      <li><a href="https://github.com/facebookincubator/react-vr/issues">Github Issues Board</a></li>
+    </ul>
+    <div class="alert" id="server_message">
+      You are viewing this file directly, rather than from the local web server. Run <tt class="code">npm start</tt> and
+      re-load this page from
+      <a href="http://localhost:8081/src/"><tt>http://localhost:8081/src/</tt></a>.
+    </div>
+  </div>
+  <script>
+    if (document.location.protocol === 'file:') {
+      document.getElementById('server_message').style.display = 'block';
+    }
+
+    var samples = [
+      {
+        name: 'Controller',
+        image: 'Controller.png'
+      }, {
+        name: 'CubeSample',
+        image: 'CubeSample.gif'
+      }, {
+        name: 'CustomTexture',
+        image: 'CustomTexture.gif'
+      }, {
+        name: 'CylindricalPanel',
+        image: 'CylindricalPanel.png'
+      }, {
+        name: 'DashSample',
+        image: 'DashSample.png'
+      }, {
+        name: 'LayoutSample',
+        image: 'LayoutSample.png'
+      }, {
+        name: 'ModelSample',
+        image: 'ModelSample.gif'
+      }, {
+        name: 'NativeModules',
+        image: 'NativeModules.png'
+      }, {
+        name: 'TourSample',
+        image: 'TourSample.gif'
+      }, {
+        name: 'VideoSample',
+        image: 'VideoSample.png'
+      }, {
+        name: 'VideoSample360',
+        image: 'VideoSample360.png'
+      }
+    ];
+
+    samples.forEach(function (sample) {
+      var sampleDOM = document.createElement('li');
+      sampleDOM.className = 'sample';
+      sampleDOM.innerHTML = '<a href="./' + sample.name + '/vr/"><img src="./__assets__/' + sample.image + '" /><span>' + sample.name + '</span></a>';
+
+      document.querySelector('.samples').appendChild(sampleDOM);
+    });
+  </script>
+</body>
+
+</html>
