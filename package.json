@@ -2,7 +2,7 @@
   "name": "react-vr-samples",
   "version": "0.0.1",
   "scripts": {
-    "start": "node -e \"console.log('open browser at http://localhost:8081/src/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
+    "start": "npm run open && node node_modules/react-native/local-cli/cli.js start",
     "bundle": "node tools/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/src/')\"",
     "devtools": "react-devtools",
