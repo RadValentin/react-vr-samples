@@ -180,7 +180,7 @@
     samples.forEach(function (sample) {
       var sampleDOM = document.createElement('li');
       sampleDOM.className = 'sample';
-      sampleDOM.innerHTML = '<a href="./' + sample.name + '/vr/index.html"><img src="./__assets__/' + sample.image + '" /><span>' + sample.name + '</span></a>';
+      sampleDOM.innerHTML = '<a href="./' + sample.name + '/index.html"><img src="./__assets__/' + sample.image + '" /><span>' + sample.name + '</span></a>';
 
       document.querySelector('.samples').appendChild(sampleDOM);
     });
