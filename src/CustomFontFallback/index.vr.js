@@ -2,7 +2,7 @@
  * The CustomFontFallback sample shows how to combine a decorative font like 
  * Lobster with an icon font like FontAwesome. This works because each font was 
  * generated for a specific unicode range so when we can't find a glyph in 
- * Lobster we fall fack to FontAwesome. Relevant code is in `vr/client.js`.
+ * FontAwesome we fall fack to Lobster. Relevant code is in `vr/client.js`.
  */
 import React from 'react';
 import {asset, AppRegistry, Pano, StyleSheet, Text, View} from 'react-vr';

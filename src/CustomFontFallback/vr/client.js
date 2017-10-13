@@ -12,7 +12,7 @@ function init(bundle, parent, options) {
       '../static_assets/FontAwesome_sdf.png'
     )
   ]).then(([lobsterFont, fontAwesome]) => {
-    // If a glyph isn't in Lobster then we fallback to FontAwesome
+    // If a glyph isn't in FontAwesome then we fallback to Lobster
     OVRUI.addFontFallback(lobsterFont, fontAwesome);
 
     const vr = new VRInstance(bundle, 'CustomFontFallback', parent, {
