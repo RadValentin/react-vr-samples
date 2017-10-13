@@ -4,12 +4,12 @@ import * as OVRUI from 'ovrui';
 function init(bundle, parent, options) {
   Promise.all([
     OVRUI.loadFont(
-      '../static_assets/Lobster.fnt',
-      '../static_assets/Lobster_sdf.png'
+      './static_assets/Lobster.fnt',
+      './static_assets/Lobster_sdf.png'
     ),
     OVRUI.loadFont(
-      '../static_assets/FontAwesome.fnt',
-      '../static_assets/FontAwesome_sdf.png'
+      './static_assets/FontAwesome.fnt',
+      './static_assets/FontAwesome_sdf.png'
     )
   ]).then(([lobsterFont, fontAwesome]) => {
     // If a glyph isn't in Lobster then we fallback to FontAwesome
